@@ -71,7 +71,7 @@ struct ContentView: View {
             
              
             }
-            .navigationTitle("WeSplit")
+            .navigationTitle("BillSplit")
             .toolbar {
                 if isFocused {
                     Button("Done") {
