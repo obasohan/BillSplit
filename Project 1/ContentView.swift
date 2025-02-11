@@ -62,13 +62,14 @@ struct ContentView: View {
                 
                 Section("Total bill") {
                     Text(totalBill, format:.currency(code: Locale.current.currency?.identifier ?? "USD"))
+                        .foregroundStyle(tip == 0 ? .red : .primary)
                 }
+               
                 
                 
                 Section("Bill per person") {
                     Text(billPerPerson, format:.currency(code: Locale.current.currency?.identifier ?? "USD"))
                 }
-            
              
             }
             .navigationTitle("BillSplit")
